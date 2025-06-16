@@ -1,6 +1,6 @@
 export const ctaDetails = {
-    heading: 'Ace Your Next Interview with Confidence',
-    subheading: 'Generate tailored questions and strong sample answers in seconds. Start prepping smarter—your next opportunity is one click away.',
-    appStoreUrl: '#',
-    googlePlayUrl: '#'
+    heading: 'Start Building with Grit—Get the Playbook Now',
+    subheading: 'Unlock honest, actionable strategies to validate, launch, and sell your next project—no hype, no fluff, just real results.',
+    appStoreUrl: '#', // Not applicable, can be removed or replaced with your buy link
+    googlePlayUrl: '#' // Not applicable, can be removed or replaced with your buy link
 }

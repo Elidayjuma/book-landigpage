@@ -7,7 +7,7 @@ export const footerDetails: {
     telephone: string;
     socials: ISocials;
 } = {
-    subheading: "Ace your next interview beyond imagination.",
+    subheading: "Start building with Grit!.",
     quickLinks: [
         {
             text: "Blogs",
@@ -25,12 +25,12 @@ export const footerDetails: {
     email: 'elidayjuma@gmail.com',
     telephone: 'not today',
     socials: {
-        // github: 'https://github.com',
+        // github: 'https://github.com/elidayjuma',
         // x: 'https://twitter.com/x',
         twitter: 'https://x.com/elidayjuma',
-        facebook: 'https://facebook.com',
+        facebook: 'https://www.facebook.com/elidecj',
         // youtube: 'https://youtube.com',
-        linkedin: 'https://www.linkedin.com',
+        linkedin: 'https://linkedin.com/in/eliutherius-juma',
         // threads: 'https://www.threads.net',
         instagram: 'https://www.instagram.com',
     }

@@ -11,8 +11,8 @@ const HomePage: React.FC = () => {
     <WebLayout>
       <Hero />
       <AboutBook />
-      <Hero />
       <FeatureCards />
+      <Hero />
       <Container>
 
         <FAQ />

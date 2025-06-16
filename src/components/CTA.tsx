@@ -1,4 +1,5 @@
 import { ctaDetails } from "@/data/cta"
+import { bookDetails } from "@/data/bookDetails"
 
 const CTA: React.FC = () => {
     return (
@@ -13,7 +14,12 @@ const CTA: React.FC = () => {
                         <h2 className="text-2xl sm:text-3xl md:text-5xl md:leading-tight font-semibold mb-4 max-w-2xl">{ctaDetails.heading}</h2>
 
                         <p className="mx-auto max-w-xl md:px-5">{ctaDetails.subheading}</p>
-
+                        <a
+                            href="#" // Replace with your actual buy link
+                            className="inline-block mt-4 px-8 py-4 bg-blue-600 text-white rounded font-semibold text-lg hover:bg-blue-700 transition"
+                        >
+                            Buy Now for {bookDetails.price}
+                        </a>
                     </div>
                 </div>
             </div>

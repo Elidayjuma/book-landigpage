@@ -1,6 +1,6 @@
 import React from 'react';
-import InputForm from './InputForm';
 import { heroDetails } from '@/data/hero';
+import { bookDetails } from '@/data/bookDetails';
 
 type HeroProps = {
     form?: React.ReactNode;
@@ -29,20 +29,20 @@ const Hero: React.FC<HeroProps> = ({ form, title, subheading }) => {
                     {form ?? (
                         <div className="mt-6 mb-60 flex flex-col sm:flex-row items-center justify-center gap-10">
                             <img
-                                src="https://99designs-blog.imgix.net/blog/wp-content/uploads/2022/01/Screenshot-2022-05-04-at-17.20.48-e1651678584559.png?auto=format&q=60&fit=max&w=930"
+                                src="/images/buildcover.jpg"
                                 alt="Book Cover"
                                 className="w-72 h-auto rounded shadow-lg"
                             />
                             <div className="flex flex-col items-center gap-4">
-                                <div className="text-2xl font-semibold text-foreground">
+                                <div className="text-4xl font-semibold text-foreground">
                                     <span className="line-through text-gray-400 mr-2">$15</span>
-                                    <span className="text-green-600">$9.99</span>
+                                    <span className="text-green-600">{bookDetails.price}</span>
                                 </div>
                                 <div className="text-sm text-gray-500 mb-2">
-                                    First 50 people get it at <span className="font-bold text-green-600">$9.99</span>!
+                                    Limited offer at <span className="font-bold text-green-600">$9.99</span>!
                                 </div>
                                 <a
-                                    href="https://your-buy-link.com"
+                                    href={bookDetails.buyUrl}
                                     className="px-8 py-4 bg-blue-600 text-white rounded font-semibold text-lg hover:bg-blue-700 transition"
                                 >
                                     Buy Now
