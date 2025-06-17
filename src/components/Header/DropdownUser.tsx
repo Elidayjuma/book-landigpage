@@ -3,15 +3,10 @@ import Link from "next/link";
 import Image from "next/image";
 import ClickOutside from "@/components/ClickOutside";
 
-import { logout } from "../../app/auth/signin/actions";
 
 const DropdownUser = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const logOutFunction = () => {
-    window.localStorage.removeItem("user")
-    logout()
-  }
 
   let user: any = window.localStorage.getItem("user")
   user = JSON.parse(user)
@@ -116,7 +111,7 @@ const DropdownUser = () => {
               </Link>
             </li>
           </ul>
-          <button onClick={() => logOutFunction()} className="flex items-center gap-3.5 px-6 py-4 text-sm font-medium duration-300 ease-in-out hover:text-primary lg:text-base">
+          <button className="flex items-center gap-3.5 px-6 py-4 text-sm font-medium duration-300 ease-in-out hover:text-primary lg:text-base">
             <svg
               className="fill-current"
               width="22"

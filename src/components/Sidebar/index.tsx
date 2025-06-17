@@ -9,7 +9,6 @@ import SidebarItem from "@/components/Sidebar/SidebarItem";
 import ClickOutside from "@/components/ClickOutside";
 import useLocalStorage from "@/hooks/useLocalStorage";
 import RoleBasedMenu from "./roleBasedMenu"
-import { logout } from "../../app/auth/signin/actions";
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -24,11 +23,6 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
   const [pageName, setPageName] = useLocalStorage("selectedMenu", "dashboard");
   const [filteredMenuGroups, setFilteredMenuGroups] = useState<any[]>([]);
 
-
-  const logOutFunction = () => {
-    window.localStorage.removeItem("user")
-    logout()
-  }
   return (
     <ClickOutside onClick={() => setSidebarOpen(false)}>
       <aside
@@ -88,7 +82,7 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
               </div>
             ))}
           </nav>
-          <button onClick={() => logOutFunction()} className="flex items-center gap-3.5 px-6 py-4 text-sm font-medium duration-300 ease-in-out text-white hover:text-primary lg:text-base">
+          <button className="flex items-center gap-3.5 px-6 py-4 text-sm font-medium duration-300 ease-in-out text-white hover:text-primary lg:text-base">
             <svg
               className="fill-current"
               width="22"

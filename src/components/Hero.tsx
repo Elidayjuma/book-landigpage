@@ -1,6 +1,7 @@
 import React from 'react';
 import { heroDetails } from '@/data/hero';
 import { bookDetails } from '@/data/bookDetails';
+import Image from "next/image";
 
 type HeroProps = {
     form?: React.ReactNode;
@@ -28,10 +29,13 @@ const Hero: React.FC<HeroProps> = ({ form, title, subheading }) => {
                 <div className="mt-6 mb-60 sm:gap-4">
                     {form ?? (
                         <div className="mt-6 mb-60 flex flex-col sm:flex-row items-center justify-center gap-10">
-                            <img
+                            <Image
                                 src="/images/buildcover.jpg"
                                 alt="Book Cover"
-                                className="w-72 h-auto rounded shadow-lg"
+                                width={320}
+                                height={480}
+                                className="rounded shadow-lg"
+                                priority
                             />
                             <div className="flex flex-col items-center gap-4">
                                 <div className="text-4xl font-semibold text-foreground">

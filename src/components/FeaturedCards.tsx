@@ -51,7 +51,7 @@ const features = [
 const FeatureCards: React.FC = () => (
     <section className="py-16 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4">
-            <h2 className="text-3xl font-bold text-center mb-10">What You'll Learn</h2>
+            <h2 className="text-3xl font-bold text-center mb-10">What You&apos;ll Learn</h2>
             <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
                 {features.map((feature, idx) => (
                     <div
