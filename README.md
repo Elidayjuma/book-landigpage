@@ -1,68 +1,67 @@
-# Interview Prep App
+# Build Anyway — Landing Page
 
-A clean and simple one-page application that helps users prepare for technical interviews by generating realistic interview questions and answers based on job descriptions.
+This is the official landing page for the book:
 
-🌐 **Live Demo**: [https://interviewprep.elidayjuma.com](https://interviewprep.elidayjuma.com)
+**Build Anyway: The Playbook for Founders in the Mud, Not on the Stage**
+by [Eliutherius Juma Wanyonyi (Ejay)](https://elidayjuma.com)
 
----
+## Purpose
 
-## 🧠 What It Does
+A clear, fast-loading, no-fluff landing page to:
 
-The Interview Prep App allows users to:
+- Present the book
+- Share the story and value
+- Enable direct sales
+- Capture email leads
+- Serve as the primary "owned channel" for readers and buyers
 
-- Paste a job description.
-- Specify the number of questions they want.
-- Optionally toggle technical questions.
-- Instantly receive relevant interview questions with model answers.
+## Stack
 
-This tool is ideal for job seekers preparing for interviews in software engineering, product management, and other technical fields.
+- **Framework:** Next.js
+- **Styling:** TailwindCSS
+- **Hosting:** (insert — Vercel? Netlify? custom?)
+- **Integrations:**
 
----
+  - Email (Simple SMTP or service)
+  - Payment links (Mpesa, Paystack, Stripe — TBD)
+  - Analytics (optional)
 
-## 🚀 Features
+## Features
 
-- 🌟 **AI-powered** question and answer generation
-- 🧑‍💻 Option to tailor questions to be more technical
-- 📋 Easy-to-use, responsive UI
-- ⚡ Fast and lightweight single-page application
+- Responsive and mobile-first
+- Fast page load (vital for low-bandwidth users in East Africa)
+- Simple flow: scroll, learn, buy
+- Minimal distractions — focused on conversions
 
----
-
-## 🛠 Tech Stack
-
-- **Frontend**: Next.js
-- **AI Service**: OpenAI API
-
----
-
-## 📝 Usage
-
-1. Open the app at [interviewprep.elidayjuma.com](https://interviewprep.elidayjuma.com)
-2. Paste any job description into the input field.
-3. Choose the number of questions you'd like to generate (defaults to 5).
-4. Toggle the **"Technical"** switch if you want more technical interview questions.
-5. Click **"Generate"** and review your customized questions and answers.
-
----
-
-## 📦 Local Setup
+## How to Run Locally
 
 ```bash
-git clone  https://github.com/Elidayjuma/interviewprep.git
-cd interviewprep
+git clone [repo-url]
+cd build-anyway-landing
 npm install
 npm run dev
 ```
 
----
+Visit `http://localhost:3000` in your browser.
 
-## 🤝 Contributing
+## Deployment
 
-Have suggestions or want to add a new feature? Feel free to fork the repo and submit a pull request.
+This page is live at:
 
----
+[https://builditanyway.elidayjuma.com](https://builditanyway.elidayjuma.com)
 
-## 📬 Contact
+To deploy:
+(update with your actual hosting flow — Vercel, Netlify CLI, or manual server)
 
-Made with ❤️ by [Eliutherius Juma](https://portfolio.elidayjuma.com)  
-Twitter: [@elidayjuma](https://twitter.com/elidayjuma)
+## To Do / Improvements
+
+- Improve SEO for book keywords
+- Add testimonials (post-launch)
+- Optimize for fast mobile checkout
+- A/B test CTAs
+- Integrate newsletter sign-up
+- Add "pay what you want" option (optional for African markets)
+
+## License
+
+Proprietary. This repo powers a commercial book landing — do not reuse without permission.
