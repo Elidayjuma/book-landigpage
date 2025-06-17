@@ -1,6 +1,5 @@
 import { ctaDetails } from "@/data/cta"
-import { bookDetails } from "@/data/bookDetails"
-
+import BuyButton from '@/components/PaystackButton';
 const CTA: React.FC = () => {
     return (
         <section id="cta" className="mt-10 mb-5 lg:my-20">
@@ -14,12 +13,15 @@ const CTA: React.FC = () => {
                         <h2 className="text-2xl sm:text-3xl md:text-5xl md:leading-tight font-semibold mb-4 max-w-2xl">{ctaDetails.heading}</h2>
 
                         <p className="mx-auto max-w-xl md:px-5">{ctaDetails.subheading}</p>
-                        <a
+                        {/* <a
                             href="#" // Replace with your actual buy link
                             className="inline-block mt-4 px-8 py-4 bg-blue-600 text-white rounded font-semibold text-lg hover:bg-blue-700 transition"
                         >
                             Buy Now for {bookDetails.price}
-                        </a>
+                        </a> */}
+                        <div className="mt-6">
+                            <BuyButton />
+                        </div>
                     </div>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import { bookDetails } from "@/data/bookDetails"
-
+import BuyButton from '@/components/PaystackButton';
 
 const AboutBook: React.FC = () => (
     <section className="max-w-3xl mx-auto py-16 px-4">
@@ -93,11 +93,10 @@ const AboutBook: React.FC = () => (
         </blockquote>
         <p>
             This book won&apos;t give you all the answers. But it will give you a compass. I&apos;ve lived what I&apos;m writing. I&apos;ve sold before building. I&apos;ve failed in public. I&apos;ve rebuilt without applause. And I&apos;ve learned how to move forward even when clarity is blurry and cash is low.<br />
-            <strong>
-                <a href={bookDetails.buyUrl} className="text-blue-600 hover:underline">Get your copy</a>
-            </strong>
-
         </p>
+        <div className="mt-6 text-center">
+            <BuyButton />
+        </div>
     </section>
 );
 

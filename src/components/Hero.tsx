@@ -2,6 +2,7 @@ import React from 'react';
 import { heroDetails } from '@/data/hero';
 import { bookDetails } from '@/data/bookDetails';
 import Image from "next/image";
+import BuyButton from '@/components/PaystackButton';
 
 type HeroProps = {
     form?: React.ReactNode;
@@ -45,12 +46,13 @@ const Hero: React.FC<HeroProps> = ({ form, title, subheading }) => {
                                 <div className="text-sm text-gray-500 mb-2">
                                     Limited offer at <span className="font-bold text-green-600">$9.99</span>!
                                 </div>
-                                <a
+                                {/* <a
                                     href={bookDetails.buyUrl}
                                     className="px-8 py-4 bg-blue-600 text-white rounded font-semibold text-lg hover:bg-blue-700 transition"
                                 >
                                     Buy Now
-                                </a>
+                                </a> */}
+                                <BuyButton />
                             </div>
                         </div>
                     )}
