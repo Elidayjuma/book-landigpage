@@ -3,7 +3,7 @@
 This is the official landing page for the book:
 
 **Build Anyway: The Playbook for Founders in the Mud, Not on the Stage**
-by [Eliutherius Juma Wanyonyi (Ejay)](https://elidayjuma.com)
+by [Eliutherius Juma (Ejay)](https://elidayjuma.com)
 
 ## Purpose
 
