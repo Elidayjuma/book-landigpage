@@ -48,7 +48,7 @@ Visit `http://localhost:3000` in your browser.
 
 This page is live at:
 
-[https://builditanyway.elidayjuma.com](https://builditanyway.elidayjuma.com)
+[https://buildanyway.elidayjuma.com](https://buildanyway.elidayjuma.com)
 
 To deploy:
 (update with your actual hosting flow — Vercel, Netlify CLI, or manual server)
