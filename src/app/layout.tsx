@@ -32,7 +32,7 @@ export default function RootLayout({
 
           {loading ? <Loader /> : children}
 
-          <Script defer data-domain="builditanyway.elidayjuma.com" src="https://analytics.elidayjuma.com/js/script.outbound-links.js" />
+          <Script defer data-domain="buildanyway.elidayjuma.com" src="https://analytics.elidayjuma.com/js/script.outbound-links.js" />
 
         </div>
       </body>
