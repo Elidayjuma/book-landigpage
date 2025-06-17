@@ -36,12 +36,14 @@ export async function sendBook(email: string) {
   const mailOptions = {
     from: process.env.SMTP_FROM,
     to: email,
-    subject: "Your eBook Purchase",
+    subject: "Your copy of Build Anyway is here!",
     html: `
-      <h1>Thank You for Your Purchase!</h1>
-      <p>I appreciate your purchase of my eBook.</p>
-      <p>Your book is attached to this email.</p>
-      <p>If you have any issues, please contact me by replying to this email.</p>
+    <h1>You've taken the first step. Thank you.</h1>
+    <p>This book is not a magic formula. It’s a playbook built from the mud — for founders like you, building with what they have.</p>
+    <p>Your copy of <strong>Build Anyway</strong> is attached to this email. Read it. Test it. Make it your own.</p>
+    <p>If anything isn’t clear, or if you hit a wall and want to talk — reply to this email. I read every message.</p>
+    <p>Build with courage. Build anyway.</p>
+    <p>- Eliutherius Juma</p>
     `,
     attachments: [
       {
